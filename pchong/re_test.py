@@ -83,6 +83,18 @@ class mysql_dbs:
         self.con.close()
         # print "++++++++"
 
+
+    def insert_1(self,*k):
+
+        sql="insert into card VALUES ({0},'{1}',{2})".format(k[0],k[1],k[2])
+               # print sql
+        cur = self.__getconnect()
+        cur.execute(sql)
+        self.con.commit()
+        cur.close()
+        self.con.close()
+        # print "++++++++"
+
     def show(self):
         sql = "select * from card where price >200"
         re = self.execQuery(sql)
@@ -90,19 +102,26 @@ class mysql_dbs:
             for j in i:
                 print j
 
-    def getcar_informtion(self,table):
+    def getcar_informtion(self):
         sql = "select * from card where price >200"
         re = self.execQuery(sql)
         for i in re:
             for j in i:
                 print j
+
+
+
+
+    def get_id(self):
+
+        sql = "select id from card where price >200"
+        re = self.execQuery(sql)
+        return re
+
 # mys = mysql_dbs('agent')
-
-
-# nn = ('123456124','2017-09-11 10:05:57','100.95')
 #
-# mys.insert(nn)
-# mys.show()
+# print(mys.get_id()[-1:][0][0])
+
 
 
 
