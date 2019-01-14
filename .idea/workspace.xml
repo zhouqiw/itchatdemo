@@ -637,7 +637,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="70" y="23" width="1280" height="739" extended-state="0" />
+    <frame x="70" y="23" width="1280" height="739" extended-state="1" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32921174" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.509693" side_tool="true" weight="0.32921174" />

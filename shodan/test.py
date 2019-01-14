@@ -11,7 +11,7 @@ import shodan
 
 SHODAN_API_KEY = "insert your API key here"
 
-api = shodan.Shodan('JbpGdKrAFAgpVPEBN9LXmS0UCJ5dWSkz')
+api = shodan.Shodan('')
 
 
 try:
